@@ -1,5 +1,4 @@
 import typescript from 'rollup-plugin-typescript2';
-import terser from '@rollup/plugin-terser';
 import dts from 'rollup-plugin-dts';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { nodeExternals } from 'rollup-plugin-node-externals';

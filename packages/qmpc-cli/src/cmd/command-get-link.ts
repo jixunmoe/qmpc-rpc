@@ -61,6 +61,6 @@ export async function commandGetLink({
       { field: 'ekey', text: ekey },
     ]);
   } else {
-    console.log(JSON.stringify({ url: downloadURL, ekey }));
+    process.stdout.write(JSON.stringify({ url: downloadURL, ekey }));
   }
 }

@@ -76,6 +76,6 @@ export function commandExplainQuality(quality: QualityFlag, { display }: Record<
     }
     table.printTable();
   } else {
-    console.log(JSON.stringify(data));
+    process.stdout.write(JSON.stringify(data));
   }
 }

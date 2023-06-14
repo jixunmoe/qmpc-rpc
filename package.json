@@ -1,0 +1,24 @@
+{
+  "name": "@jixun/qmpc-rpc",
+  "version": "1.0.0",
+  "description": "QQ 音乐 PC 端 RPC 协议实现。",
+  "main": "dist/lib.js",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc && node scripts/inject-shebang.js"
+  },
+  "keywords": [],
+  "author": "Jixun Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "console-table-printer": "^2.11.1",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}

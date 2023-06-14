@@ -1,6 +1,6 @@
 import { Table } from 'console-table-printer';
 
-import { ToFileQualityFlags } from '@jixun/qmpc-rpc';
+import { ToFileQualityFlags } from '@jixun/qm-rpc';
 import { createClient } from '../utils/createClient';
 
 export async function commandSearch(query: string, { page, credential, count, colWidth }: Record<string, string>) {

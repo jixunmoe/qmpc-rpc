@@ -26,6 +26,6 @@ export default [
   {
     input: './src/lib.ts',
     output: [{ file: 'dist/lib.d.ts', format: 'es' }],
-    plugins: [nodeResolve(), nodeExternals(), dts()],
+    plugins: [dts()],
   },
 ];

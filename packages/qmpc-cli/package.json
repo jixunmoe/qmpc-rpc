@@ -1,11 +1,13 @@
 {
-  "name": "@jixun/qmpc-rpc",
+  "name": "@jixun/qmpc-cli",
   "version": "0.0.1",
   "description": "QQ 音乐 PC 端 RPC 协议实现。",
   "main": "dist/lib.js",
   "scripts": {
     "build": "shx rm -rf dist && tsc && node scripts/inject-shebang.js"
   },
+  "homepage": "https://github.com/jixunmoe/qmpc-rpc/tree/main/packages/qmpc-cli",
+  "repository": "github:jixunmoe/qmpc-rpc",
   "keywords": [],
   "author": "Jixun Wu",
   "license": "MIT",
@@ -25,7 +27,7 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "@jixun/qmpc-rpc": "link:../qmpc-rpc",
+    "@jixun/qm-rpc": "workspace:^0.1.1",
     "axios": "^1.4.0",
     "commander": "^10.0.1",
     "console-table-printer": "^2.11.1"

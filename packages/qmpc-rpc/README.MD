@@ -8,4 +8,4 @@
 
 ## 使用
 
-参考对应的 [`@jixun/qm-rpc`](https://www.npmjs.com/package/@jixun/qm-rpc) 项目（施工中）
+参考对应的 [`@jixun/qm-rpc`](https://www.npmjs.com/package/@jixun/qm-rpc) 项目（[仓库](https://github.com/jixunmoe/qmpc-rpc/tree/main/packages/qmpc-cli)）。

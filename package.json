@@ -1,11 +1,8 @@
 {
-  "name": "@jixun/qmpc-rpc",
-  "version": "1.0.0",
+  "name": "@jixun/qmpc-rpc-workspace",
+  "private": true,
+  "version": "0.0.0",
   "description": "QQ 音乐 PC 端 RPC 协议实现。",
-  "main": "dist/lib.js",
-  "scripts": {
-    "build": "shx rm -rf dist && tsc && node scripts/inject-shebang.js"
-  },
   "keywords": [],
   "author": "Jixun Wu",
   "license": "MIT",

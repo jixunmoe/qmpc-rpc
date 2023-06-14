@@ -1,4 +1,4 @@
-import { QQMusicRPC, QQMusicSession } from '@jixun/qmpc-rpc';
+import { QQMusicRPC, QQMusicSession } from '@jixun/qm-rpc';
 import { readJson } from './readJSON';
 
 export function createClient(credentialPath?: string) {

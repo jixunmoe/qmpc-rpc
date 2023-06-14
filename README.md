@@ -2,6 +2,11 @@
 
 QQ 音乐 PC 端的 RPC 协议实现。
 
+## 这是由多个包组成的仓库
+
+- 命令行 [`@jixun/qmpc-cli`](./packages/qmpc-cli/)
+- API 框架 [`@jixun/qm-rpc`](./packages/qmpc-rpc/)
+
 ## TODO:
 
 - [ ] 使用 Rollup 构建 `qmpc-cli`

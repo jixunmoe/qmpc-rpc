@@ -1,6 +1,6 @@
 import { Command, Option } from 'commander';
 import { readJson } from './utils/readJSON';
-import { Format, Quality } from '@jixun/qmpc-rpc';
+import { Format, Quality } from '@jixun/qm-rpc';
 
 import { commandSearch } from './cmd/command-search';
 import { commandExplainQuality } from './cmd/command-explain-quality';

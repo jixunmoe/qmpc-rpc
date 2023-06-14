@@ -1,4 +1,4 @@
-import { Format, GetSongFileName, Quality, QualityFlag, SelectSongLevel } from '@jixun/qmpc-rpc';
+import { Format, GetSongFileName, Quality, QualityFlag, SelectSongLevel } from '@jixun/qm-rpc';
 import { createClient } from '../utils/createClient';
 import axios from 'axios';
 import { Parakeet, TransformResult, fetchParakeet } from '@jixun/libparakeet';

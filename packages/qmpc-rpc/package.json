@@ -1,12 +1,14 @@
 {
   "name": "@jixun/qm-rpc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "QQ 音乐 PC 端 RPC 协议实现。",
   "main": "dist/lib.cjs",
   "types": "dist/lib.d.ts",
   "scripts": {
     "build": "rollup -c"
   },
+  "homepage": "https://github.com/jixunmoe/qmpc-rpc/tree/main/packages/qmpc-rpc",
+  "repository": "github:jixunmoe/qmpc-rpc",
   "keywords": [],
   "author": "Jixun Wu",
   "license": "MIT",

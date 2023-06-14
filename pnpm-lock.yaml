@@ -26,8 +26,8 @@ importers:
 
   packages/qmpc-cli:
     dependencies:
-      '@jixun/qmpc-rpc':
-        specifier: link:../qmpc-rpc
+      '@jixun/qm-rpc':
+        specifier: workspace:^0.1.1
         version: link:../qmpc-rpc
       axios:
         specifier: ^1.4.0

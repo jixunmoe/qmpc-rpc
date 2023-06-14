@@ -2,6 +2,28 @@
 
 对 `@jixun/qmpc-rpc` 的简易包装，做示例用。
 
+## 安装
+
+可以安装到全局，或本地安装（推荐）。
+
+全局安装：
+
+```sh
+npm i -g @jixun/qmpc-cli
+```
+
+本地安装：
+
+```sh
+# 首先找一个目录
+mkdir qmpc && cd qmpc
+npm init -y
+npm i @jixun/qmpc-cli
+
+# 之后使用 `npx qmpc-cli` 来执行：
+npx qmpc-cli help
+```
+
 ## CLI 使用
 
 所有接口（除了下载）都可以添加 `--display json` 来获取 JSON 信息，可以用来自动化（虽然直接用这个库会更方便）。
@@ -31,13 +53,13 @@
 ### 查看帮助
 
 ```sh
-node qm-cli -h
+npx qmpc-cli -h
 ```
 
 ### 检索
 
 ```sh
-node qm-cli search -n 2 富士山下
+npx qmpc-cli search -n 2 富士山下
 ```
 
 > | 序号 | 名称     | 歌手   |           专辑           |  音质   |     文件/file_id |    音乐/music_id |
@@ -48,7 +70,7 @@ node qm-cli search -n 2 富士山下
 ### 解释音质
 
 ```sh
-node qm-cli explain-quality 14485
+npx qmpc-cli explain-quality 14485
 ```
 
 > 该音质值包含下述 8 种音质:
@@ -77,13 +99,13 @@ node qm-cli explain-quality 14485
 指定 `--user-quality Best`，会自动选择最高可用音质（臻品全景声）。
 
 ```sh
-node qm-cli get-link -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --file-quality 14485 --user-quality Best --display json
+npx qmpc-cli get-link -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --file-quality 14485 --user-quality Best --display json
 ```
 
 如果需要指定其中一个音质，如 `FLAC`，参数更改如下：
 
 ```sh
-node qm-cli get-link -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard --display json
+npx qmpc-cli get-link -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard --display json
 ```
 
 返回值 (JSON 形式):
@@ -110,6 +132,6 @@ node qm-cli get-link -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard 
 - `--qmc2-seed` - 用于解密 `EKey` 的种子。不填写则获得加密后的文件。
 
 ```sh
-node qm-cli download -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard --qmc2-seed 0 -o /tmp/富士山下.flac
-node qm-cli download -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard -o /tmp/富士山下.mflac
+npx qmpc-cli download -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard --qmc2-seed 0 -o /tmp/富士山下.flac
+npx qmpc-cli download -f 0032PB2V2QYWSC -m 003aAPj81VWrbL --format FLAC_Standard -o /tmp/富士山下.mflac
 ```

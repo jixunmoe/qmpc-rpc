@@ -1,6 +1,6 @@
 import { Command, Option } from 'commander';
 import { readJson } from './utils/readJSON';
-import { Format, Quality } from '@jixun/qm-rpc';
+import { Format, Quality } from '@jixun/qmpc-rpc';
 
 import { commandSearch } from './cmd/command-search';
 import { commandExplainQuality } from './cmd/command-explain-quality';
@@ -14,8 +14,8 @@ const optDisplay = new Option('--display [format]', '输出显示格式').choice
 const optCredentialPath = new Option('-c, --credential <path>', '认证信息 JSON 文件。').default('credentials.json');
 
 program
-  .name('qqmusic-cli')
-  .description('一个基于命令行的 QQMusic 客户端协议的客户端')
+  .name('qmpc-cli')
+  .description('一个基于命令行的 QQMusic PC 客户端协议的客户端')
   .version(pkgJSON?.version || '<unknown>');
 
 program

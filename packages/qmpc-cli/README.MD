@@ -1,6 +1,6 @@
 # QMPC RPC 协议（CLI）
 
-对 `@jixun/qm-rpc` 的简易包装，做示例用。
+对 `@jixun/qmpc-rpc` 的简易包装，做示例用。
 
 ## CLI 使用
 

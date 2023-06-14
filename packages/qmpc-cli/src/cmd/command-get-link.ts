@@ -1,5 +1,5 @@
 import { printTable } from 'console-table-printer';
-import { Format, GetSongFileName, Quality, QualityFlag, SelectSongLevel } from '@jixun/qm-rpc';
+import { Format, GetSongFileName, Quality, QualityFlag, SelectSongLevel } from '@jixun/qmpc-rpc';
 import { createClient } from '../utils/createClient';
 
 interface CommandGetLinkOpts {

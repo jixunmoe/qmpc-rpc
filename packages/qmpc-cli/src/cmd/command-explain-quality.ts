@@ -1,4 +1,4 @@
-import { Format, QualityFlag, QualityFlagToFormat } from '@jixun/qm-rpc';
+import { Format, QualityFlag, QualityFlagToFormat } from '@jixun/qmpc-rpc';
 import { Table } from 'console-table-printer';
 
 const qualityNames = new Map<QualityFlag, string>([

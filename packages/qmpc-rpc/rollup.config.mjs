@@ -10,7 +10,7 @@ export default [
       file: 'dist/lib.cjs',
       format: 'cjs',
     },
-    plugins: [nodeExternals(), nodeResolve(), typescript(), terser()],
+    plugins: [nodeExternals(), nodeResolve(), typescript()],
   },
   {
     input: './src/lib.ts',
